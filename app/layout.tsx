@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Manrope, Space_Grotesk } from "next/font/google";
 import "aos/dist/aos.css";
 import { AosProvider } from "./components/AosProvider";
+import { FloatingWhatsApp } from "./components/FloatingWhatsApp";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import "./globals.css";
@@ -100,6 +101,7 @@ export default function RootLayout({
           <Header />
           <div className="flex-1">{children}</div>
           <Footer />
+          <FloatingWhatsApp />
         </div>
       </body>
     </html>

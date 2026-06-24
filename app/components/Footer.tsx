@@ -31,7 +31,7 @@ export function Footer() {
     <footer className="relative overflow-hidden bg-slate-950 text-white">
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-sky-400 to-transparent" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_0%,rgba(37,99,235,0.22),transparent_28%),linear-gradient(180deg,rgba(15,23,42,0.7),rgba(2,6,23,1))]" />
-      <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
+      <div className="relative mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-6 md:grid-cols-2 lg:grid-cols-[1.05fr_0.9fr_1.25fr_1.2fr] lg:px-8">
         <div>
           <Image
             src="/logo.png"
@@ -41,7 +41,7 @@ export function Footer() {
             className="h-auto w-[120px] object-contain sm:w-[140px] lg:w-[165px]"
           />
           <p className="mt-4 text-sm font-semibold text-sky-100">{site.slogan}</p>
-          <div className="mt-6 flex items-center gap-3">
+          <div className="mt-5 flex items-center gap-3">
             {socialLinks.map((item) => {
               const Icon = item.icon;
 
@@ -63,7 +63,7 @@ export function Footer() {
           <h2 className="text-sm font-black uppercase tracking-[0.2em] text-sky-200">
             Quick Links
           </h2>
-          <ul className="mt-5 space-y-3 text-sm text-slate-300">
+          <ul className="mt-5 space-y-2.5 text-sm text-slate-300">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link className="transition hover:pl-1 hover:text-white" href={link.href}>
@@ -85,7 +85,7 @@ export function Footer() {
           <h2 className="text-sm font-black uppercase tracking-[0.2em] text-sky-200">
             Courses
           </h2>
-          <ul className="mt-5 space-y-3 text-sm text-slate-300">
+          <ul className="mt-5 grid gap-x-6 gap-y-2.5 text-sm text-slate-300 sm:grid-cols-2 lg:grid-cols-2">
             {footerCourseLinks.map((course) => (
               <li key={course.href}>
                 <Link className="transition hover:pl-1 hover:text-white" href={course.href}>
@@ -100,7 +100,7 @@ export function Footer() {
           <h2 className="text-sm font-black uppercase tracking-[0.2em] text-sky-200">
             Contact Information
           </h2>
-          <ul className="mt-5 space-y-4 text-sm text-slate-300">
+          <ul className="mt-5 space-y-3.5 text-sm text-slate-300">
             <li className="flex gap-3">
               <FiMapPin className="mt-1 shrink-0 text-sky-300" aria-hidden />
               {site.address}
