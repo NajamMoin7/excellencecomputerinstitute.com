@@ -81,7 +81,7 @@ export default function ContactPage() {
               admission guidance, or campus visit details.
             </p>
             <a
-              href="https://wa.me/923000000000"
+              href={site.whatsapp}
               className="gradient-action mt-7 inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-black text-slate-950 shadow-xl shadow-blue-950/30 transition hover:-translate-y-0.5 hover:text-white hover:shadow-blue-500/30"
             >
               <FiMessageCircle aria-hidden />

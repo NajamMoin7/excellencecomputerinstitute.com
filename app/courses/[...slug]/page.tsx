@@ -142,7 +142,7 @@ export default async function CourseDetailPage({ params }: CoursePageProps) {
                 <FiArrowRight aria-hidden />
               </Link>
               <a
-                href={`tel:${site.phone}`}
+                href={site.phoneHref}
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-sky-300/50 px-6 py-3 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-white/10 hover:shadow-lg hover:shadow-sky-500/20"
               >
                 Contact Button

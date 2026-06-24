@@ -84,7 +84,7 @@ export const faqs: FAQ[] = [
   {
     question: "How can I contact the institute?",
     answer:
-      "Phone: 0300-0000000. Email: info@excellencecomputerinstitute.com.",
+      "Phone: 0339-0023579. Email: info@excellencecomputerinstitute.com.",
   },
   {
     question: "Do you offer certificates?",

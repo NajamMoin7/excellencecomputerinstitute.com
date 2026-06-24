@@ -107,7 +107,7 @@ export function Footer() {
             </li>
             <li className="flex gap-3">
               <FiPhone className="mt-1 shrink-0 text-sky-300" aria-hidden />
-              <a className="hover:text-white" href={`tel:${site.phone}`}>
+              <a className="hover:text-white" href={site.phoneHref}>
                 {site.phone}
               </a>
             </li>

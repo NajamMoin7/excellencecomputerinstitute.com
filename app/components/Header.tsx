@@ -249,7 +249,7 @@ export function Header() {
 
         <div className="hidden items-center gap-3 lg:flex">
           <a
-            href={`tel:${site.phone}`}
+            href={site.phoneHref}
             className="gradient-action inline-flex items-center gap-2 rounded-full border border-sky-300/40 px-4 py-2 text-sm font-bold text-white shadow-blue-600/0 transition hover:-translate-y-0.5 hover:border-sky-300 hover:shadow-lg hover:shadow-blue-600/25"
           >
             <FiPhone className="transition hover:scale-110" aria-hidden />

@@ -70,8 +70,24 @@ export function organizationJsonLd() {
     url: site.url,
     logo: `${site.url}${site.logo}`,
     image: `${site.url}${site.logo}`,
-    telephone: site.phone,
+    telephone: "+923390023579",
     email: site.email,
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        telephone: "+923390023579",
+        contactType: "Admissions and course enquiries",
+        areaServed: "PK",
+        availableLanguage: ["English", "Urdu"],
+      },
+      {
+        "@type": "ContactPoint",
+        url: site.whatsapp,
+        contactType: "WhatsApp enquiries",
+        areaServed: "PK",
+        availableLanguage: ["English", "Urdu"],
+      },
+    ],
     address: {
       "@type": "PostalAddress",
       streetAddress: "B-53 Aleemabad",

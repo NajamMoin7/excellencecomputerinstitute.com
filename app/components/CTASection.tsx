@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FiArrowRight, FiPhone } from "react-icons/fi";
+import { FiArrowRight, FiMessageCircle, FiPhone } from "react-icons/fi";
 import { site } from "../lib/site";
 
 export function CTASection() {
@@ -29,11 +29,18 @@ export function CTASection() {
             <FiArrowRight aria-hidden />
           </Link>
           <a
-            href={`tel:${site.phone}`}
+            href={site.phoneHref}
             className="inline-flex items-center justify-center gap-2 rounded-full border border-sky-300/50 px-6 py-3 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-white/10 hover:shadow-lg hover:shadow-sky-500/20"
           >
             <FiPhone className="transition hover:scale-110" aria-hidden />
             Contact Us
+          </a>
+          <a
+            href={site.whatsapp}
+            className="inline-flex items-center justify-center gap-2 rounded-full border border-emerald-300/50 px-6 py-3 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-emerald-400/10 hover:shadow-lg hover:shadow-emerald-500/20"
+          >
+            <FiMessageCircle className="transition hover:scale-110" aria-hidden />
+            WhatsApp Enquiry
           </a>
         </div>
       </div>

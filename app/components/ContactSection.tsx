@@ -20,7 +20,7 @@ export function ContactSection() {
           <div className="mt-8 grid items-stretch gap-4">
             {[
               { icon: FiMapPin, label: "Address", value: site.address },
-              { icon: FiPhone, label: "Phone", value: site.phone, href: `tel:${site.phone}` },
+              { icon: FiPhone, label: "Phone", value: site.phone, href: site.phoneHref },
               { icon: FiMail, label: "Email", value: site.email, href: `mailto:${site.email}` },
             ].map((item) => {
               const Icon = item.icon;
@@ -76,7 +76,7 @@ export function ContactSection() {
               <input
                 name="phone"
                 className="rounded-[8px] border border-slate-200 bg-white px-4 py-3 outline-none transition focus:border-blue-500 focus:ring-4 focus:ring-blue-100"
-                placeholder="0300-0000000"
+                placeholder="0339-0023579"
               />
             </label>
             <label className="grid gap-2 text-sm font-bold text-slate-800">

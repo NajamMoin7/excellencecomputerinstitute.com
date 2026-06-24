@@ -113,14 +113,14 @@ export function FAQSection({ items, short = false, limit }: FAQSectionProps) {
               Contact Us
             </Link>
             <a
-              href={`tel:${site.phone}`}
+              href={site.phoneHref}
               className="inline-flex items-center justify-center gap-2 rounded-full border border-blue-200 bg-white px-6 py-3 text-sm font-black text-blue-800 transition hover:-translate-y-0.5 hover:border-blue-300 hover:bg-blue-50"
             >
               <FiPhone aria-hidden />
               Call Now
             </a>
             <a
-              href="https://wa.me/923000000000"
+              href={site.whatsapp}
               className="inline-flex items-center justify-center gap-2 rounded-full border border-emerald-200 bg-white px-6 py-3 text-sm font-black text-emerald-700 transition hover:-translate-y-0.5 hover:border-emerald-300 hover:bg-emerald-50"
             >
               <FiSend aria-hidden />
